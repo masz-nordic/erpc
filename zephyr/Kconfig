@@ -1,0 +1,2 @@
+config ERPC
+	bool "eRPC support"

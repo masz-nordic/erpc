@@ -13,10 +13,13 @@ zephyr_library_sources(
 	erpc_c/infra/erpc_message_loggers.cpp
 	erpc_c/infra/erpc_server.cpp
 	erpc_c/infra/erpc_simple_server.cpp
-	erpc_c/port/erpc_port_stdlib.cpp
+	erpc_c/port/erpc_port_zephyr.cpp
 	erpc_c/port/erpc_threading_zephyr.cpp
 	erpc_c/setup/erpc_client_setup.cpp
 	erpc_c/setup/erpc_server_setup.cpp
+	erpc_c/setup/erpc_setup_mbf_dynamic.cpp
+	erpc_c/setup/erpc_setup_rpmsg_lite_master.cpp
+	erpc_c/setup/erpc_setup_rpmsg_lite_remote.cpp
 	erpc_c/setup/erpc_setup_serial.cpp
 	erpc_c/transports/erpc_rpmsg_lite_transport.cpp
 )

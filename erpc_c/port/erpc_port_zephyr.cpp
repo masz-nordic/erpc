@@ -49,6 +49,11 @@ void operator delete[](void *ptr) THROW
     erpc_free(ptr);
 }
 
+void operator delete(void *ptr, std::size_t count) THROW
+{
+    erpc_free(ptr);
+}
+
 void *erpc_malloc(size_t size)
 {
     void *p = k_malloc(size);
